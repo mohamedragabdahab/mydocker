@@ -8,3 +8,15 @@ services:
       - ../code:/var/www/html
     ports:
       - 8000:80
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: demo
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+    ports:
+       - 3306:3306
+
+
