@@ -3,19 +3,20 @@ version: '3.9'
 services:
   web:
     build: .
-    container_name: php73-apache
+    container_name: web
     volumes:
       - ../code:/var/www/html
     ports:
       - 8000:80
   db:
     image: mysql
+    container_name: db
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: demo
-      MYSQL_USER: demo
-      MYSQL_PASSWORD: demo
+      MYSQL_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DATABASE_NAME}
+      MYSQL_USER: ${DATABASE_USER}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
     ports:
        - 3306:3306
 
