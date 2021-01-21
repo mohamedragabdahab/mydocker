@@ -1,0 +1,14 @@
+Started on Jan 20, 2021 1:37:47 AM
+Started by event from 140.82.115.154 ⇒ http://e65c91ba0c8a.ngrok.io:8080/github-webhook/ on Wed Jan 20 01:37:47 UTC 2021
+Using strategy: Default
+[poll] Last Built Revision: Revision 52373d3f4e284c2e85239e9f08e98823d49087db (refs/remotes/origin/master)
+The recommended git tool is: NONE
+using credential mohamed
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+using GIT_SSH to set credentials 
+ > git ls-remote -h -- https://github.com/mohamedragabdahab/demo.git # timeout=10
+Found 2 remote heads on https://github.com/mohamedragabdahab/demo.git
+[poll] Latest remote head revision on refs/heads/master is: b35919f582e03fbd9d49a1e02f69e680c33ca2f7
+Done. Took 0.53 sec
+Changes found

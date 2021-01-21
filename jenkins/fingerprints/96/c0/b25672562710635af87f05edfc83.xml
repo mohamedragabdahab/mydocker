@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2021-01-19 23:17:52.193 UTC</timestamp>
+  <md5sum>96c0b25672562710635af87f05edfc83</md5sum>
+  <fileName>Credential id=mohamed name=mohamedragabdahab</fileName>
+  <usages>
+    <entry>
+      <string>DemoShop</string>
+      <ranges>1-4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

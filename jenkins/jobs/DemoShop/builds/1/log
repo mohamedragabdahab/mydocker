@@ -1,0 +1,26 @@
+Started by user [8mha:////4FF4zexzYLNAzwQYS/5vyYh5/+NXigwCHiMMICSfdw7RAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DemoShop
+The recommended git tool is: NONE
+using credential mohamed
+Cloning the remote Git repository
+Cloning repository https://github.com/mohamedragabdahab/demo.git
+ > git init /var/jenkins_home/workspace/DemoShop # timeout=10
+Fetching upstream changes from https://github.com/mohamedragabdahab/demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress -- https://github.com/mohamedragabdahab/demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/mohamedragabdahab/demo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision f8b49a9c3f682096ea54d38c9c5e490628d9916c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f8b49a9c3f682096ea54d38c9c5e490628d9916c # timeout=10
+Commit message: "Test Jenkind WebHook +6"
+First time build. Skipping changelog.
+[DemoShop] $ /bin/sh -xe /tmp/jenkins1131992942946350543.sh
++ echo Hello World!
+Hello World!
+Finished: SUCCESS

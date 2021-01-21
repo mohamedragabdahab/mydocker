@@ -10,3 +10,6 @@ RUN git config --global user.email "eng.mohamed.dahab@gmail.com" && git config -
 #install symfony console
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+
+#install mysql pdo
+RUN docker-php-ext-install pdo pdo_mysql

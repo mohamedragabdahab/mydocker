@@ -5,7 +5,7 @@ services:
     build: .
     container_name: web
     volumes:
-      - ../code:/var/www/html
+      - ./:/var/www/html
     ports:
       - 8000:80
   db:
@@ -19,5 +19,17 @@ services:
       MYSQL_PASSWORD: ${DATABASE_PASSWORD}
     ports:
        - 3306:3306
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - ./jenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/local/bin/docker
 
 

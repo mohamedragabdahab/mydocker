@@ -1,0 +1,23 @@
+Started by GitHub push by mohamedragabdahab
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DemoShop
+The recommended git tool is: NONE
+using credential mohamed
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/mohamedragabdahab/demo.git # timeout=10
+Fetching upstream changes from https://github.com/mohamedragabdahab/demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress -- https://github.com/mohamedragabdahab/demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b35919f582e03fbd9d49a1e02f69e680c33ca2f7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b35919f582e03fbd9d49a1e02f69e680c33ca2f7 # timeout=10
+Commit message: "Test Jenkind WebHook +8"
+ > git rev-list --no-walk 52373d3f4e284c2e85239e9f08e98823d49087db # timeout=10
+[DemoShop] $ /bin/sh -xe /tmp/jenkins6981416157278639732.sh
++ echo Hello World!
+Hello World!
+Finished: SUCCESS

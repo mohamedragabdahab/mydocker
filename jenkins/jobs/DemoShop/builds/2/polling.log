@@ -1,0 +1,14 @@
+Started on Jan 19, 2021 11:29:39 PM
+Started by event from 140.82.115.250 ⇒ http://localhost:8080/github-webhook/ on Tue Jan 19 23:29:39 UTC 2021
+Using strategy: Default
+[poll] Last Built Revision: Revision f8b49a9c3f682096ea54d38c9c5e490628d9916c (refs/remotes/origin/master)
+The recommended git tool is: NONE
+using credential mohamed
+ > git --version # timeout=10
+ > git --version # 'git version 2.11.0'
+using GIT_SSH to set credentials 
+ > git ls-remote -h -- https://github.com/mohamedragabdahab/demo.git # timeout=10
+Found 2 remote heads on https://github.com/mohamedragabdahab/demo.git
+[poll] Latest remote head revision on refs/heads/master is: bd626bb254bb56fc2034d62a1f6fdcf0d1ddfa89
+Done. Took 0.57 sec
+Changes found
